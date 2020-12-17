@@ -31,9 +31,10 @@ while(1):
             MyText = r.recognize_google(audio2)
             MyText = MyText.lower()
             print(MyText)
-            if Mytext=="wright" or Mytext=="right":
+            if "wright" in MyText or "right" in MyText or "rite" in MyText or "write" in MyText or "rent" in MyText :
                 j+=1
-                print(j)
+                print("\033[1m" + "WRIGHT NUMBER:" + "\033[0m" ,j )
+
             elif MyText=="exit":
                 breaK
 
